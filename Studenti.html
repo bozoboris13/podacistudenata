@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<script>
+
+        
+           function Student(name, adress, phone, course) {
+    	this.ime = name;
+    	this.adress = adress;
+    	this.phone = phone;
+    	this.course = course;
+
+    	this.getName = function() {
+    		return this.name + " " + this.adress;
+    	}
+
+    	this.getInfo = function() {
+    		return "Name: " +  this.ime + "\n" +
+    		"Adress: " + this.adress + "\n" +
+    		"Phone: " + this.phone + "\n" +
+    		"Course: " + this.course
+    	}
+    }
+
+
+
+    let student1 = new Student("Marko", "Topolska", 67545445, "Istorija"); 
+
+   
+    let student1Info = student1.getInfo();           
+
+    
+    console.log(student1Info);
+
+
+           function Student2(name, adress, phone, course) {
+    	this.name = name;
+    	this.adress = adress;
+    	this.phone = phone;
+    	this.course = course;
+
+    	this.getName = function() {
+    		return this.name + " " + this.adress;
+    	}
+
+    	this.getInfo = function() {
+    		return "Name: " +  this.name + "\n" +
+    		"Adress: " + this.adress + "\n" +
+    		"Phone: " + this.phone + "\n" +
+    		"Course: " + this.course
+    	}
+    }
+
+
+
+    let student2 = new Student("Gari", "Bokovska", 3454456, "Srpski"); 
+
+   
+    let student2Info = student2.getInfo();           
+
+    
+    console.log(student2Info);
+
+           function Student3(name, adress, phone, course) {
+    	this.name = name;
+    	this.adress = adress;
+    	this.phone = phone;
+    	this.course = course;
+
+    	this.getName = function() {
+    		return this.name + " " + this.adress;
+    	}
+
+    	this.getInfo = function() {
+    		return "Name: " +  this.name + "\n" +  
+    		"Adress: " + this.adress + "\n" +
+    		"Phone: " + this.phone + "\n" +
+    		"Course: " + this.course
+    	}
+    }
+
+
+
+    let student3 = new Student("Marijan", "Kovski", 0324567, "Geografija"); 
+
+   
+    let student3Info = student3.getInfo();           
+
+    
+    console.log(student3Info);
+
+
+
+</script>
+
+</body>
+</html>
